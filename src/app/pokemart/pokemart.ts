@@ -7,6 +7,5 @@ import { PokemartService } from '../pokemart-service';
   styleUrl: './pokemart.css',
 })
 export class Pokemart {
-  pokemartService = inject(PokemartService);
-
+  pokemartService = inject(PokemartService)
 }

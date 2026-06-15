@@ -2,7 +2,7 @@
 <div class="menu-section">
   <h1>Favourite Pokemon from johto region</h1>
   <div class="card-grid">
-    @for (pokemon of PokemonService.kantoPokemon(); track pokemon.id) {
+    @for (pokemon of PokemonService.johtoPokemon(); track pokemon.id) {
 
       <div class = "pokemon-card">
         <h3>{{ pokemon.name }}</h3>
