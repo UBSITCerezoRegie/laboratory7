@@ -1,17 +1,16 @@
-<div class="container">
-    <h1> Hoenn Gym Leaders </h1>
-    @for (leader of hoennLeaderService.hoennG(); track leader.name) {
-      <div class="leader-card">
-        <h2>Leader: {{ leader.name }}</h2>
-            <p><strong>Town:</strong>{{leader.town}}</p>
-            <p><strong>Specialty:</strong>{{leader.specialty}}</p>
-            <p><strong>badge:</strong>{{leader.badge}}</p>
-        <h3>Pokemon Team: </h3>
-        <ul>
-            @for(Pokemon of leader.team; track Pokemon){
-                <li>{{Pokemon}}</li>    
-            }
-        </ul>
+
+<div class="menu-section">
+  <h1>Favourite Pokemon from hoenn region</h1>
+  <div class="card-grid">
+    @for (pokemon of PokemonService.kantoPokemon(); track pokemon.id) {
+
+      <div class = "pokemon-card">
+        <h3>{{ pokemon.name }}</h3>
+        <p>Type: {{ pokemon.type }}</p>
+        <p>Held Item: {{ pokemon.heldItem }}</p>
+        <p>{{ pokemon.description }}</p>
       </div>
+    
     }
   </div>
+</div>

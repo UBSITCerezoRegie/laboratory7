@@ -1,6 +1,32 @@
-.card-grid { 
-  display: flex; 
-  justify-content: center; 
-  flex-wrap: wrap; 
-  gap: 2.5rem; 
-} 
+.menu-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.pokemon-card {
+  width: 280px;
+  min-height: 220px;
+  padding: 1.5rem;
+
+  background: #ffffff;
+  border: 3px solid #e53935;
+  border-radius: 15px;
+
+  box-shadow: 0 5px 15px rgba(229, 57, 53, 0.2);
+  transition: 0.3s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-8px);
+}
+
+.pokemon-card h3 {
+  color: #e53935;
+}

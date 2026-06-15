@@ -1,11 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { LeaderInfo } from '../leader-info/leader-info';
+import { Component, inject, signal } from '@angular/core';
+import { PokemonService } from '../pokemon-service';
 
 @Component({
   selector: 'app-kanto-gym-leader',
-  imports: [LeaderInfo],
-  templateUrl: './kanto-gym-leader.html',
-  styleUrl: './kanto-gym-leader.css',
+  imports: [],
+  templateUrl: 'kanto-gym-leader.html',
+  styleUrl: 'kanto-gym-leader.css',
 })
 export class KantoGymLeader {
 
@@ -76,5 +76,7 @@ export class KantoGymLeader {
       }
     ]
   );
+  PokemonService = inject(PokemonService);
+
 
 }

@@ -1,8 +1,16 @@
-<div class="menu-section johto">
-  <h1>Johto Gym Leaders</h1>
+
+<div class="menu-section">
+  <h1>Favourite Pokemon from johto region</h1>
   <div class="card-grid">
-    @for (leader of gymLeaderJ(); track leader.name) {
-      <app-leader-info [leader]="leader"></app-leader-info>
+    @for (pokemon of PokemonService.kantoPokemon(); track pokemon.id) {
+
+      <div class = "pokemon-card">
+        <h3>{{ pokemon.name }}</h3>
+        <p>Type: {{ pokemon.type }}</p>
+        <p>Held Item: {{ pokemon.heldItem }}</p>
+        <p>{{ pokemon.description }}</p>
+      </div>
+    
     }
   </div>
 </div>

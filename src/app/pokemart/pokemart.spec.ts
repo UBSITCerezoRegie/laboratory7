@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeaderInfo } from './leader-info';
+import { Pokemart } from './pokemart';
 
-describe('leaderinfocomponent', () => {
-  let component: LeaderInfo;
-  let fixture: ComponentFixture<LeaderInfo>;
+describe('Pokemart', () => {
+  let component: Pokemart;
+  let fixture: ComponentFixture<Pokemart>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LeaderInfo],
+      imports: [Pokemart],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LeaderInfo);
+    fixture = TestBed.createComponent(Pokemart);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

@@ -1,6 +1,5 @@
-import { Component , inject } from '@angular/core';
-import { HoennLeaderService } from '../hoenn-leader-service';
-import { LeaderInfo } from '../leader-info/leader-info';
+import { Component , Inject, inject, Injector } from '@angular/core';
+import { PokemonService } from '../pokemon-service';
 @Component({
   selector: 'app-hoenn-gym-leader',
   imports: [],
@@ -8,5 +7,5 @@ import { LeaderInfo } from '../leader-info/leader-info';
   styleUrl: './hoenn-gym-leader.css',
 })
 export class HoennGymLeader {
-  hoennLeaderService = inject(HoennLeaderService);
+  PokemonService = inject(PokemonService);
 }
