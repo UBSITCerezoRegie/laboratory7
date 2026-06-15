@@ -1,0 +1,8 @@
+<div class="menu-section johto">
+  <h1>Johto Gym Leaders</h1>
+  <div class="card-grid">
+    @for (leader of gymLeaderJ(); track leader.name) {
+      <app-leader-info [leader]="leader"></app-leader-info>
+    }
+  </div>
+</div>

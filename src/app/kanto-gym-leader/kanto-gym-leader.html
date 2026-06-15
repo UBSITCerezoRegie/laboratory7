@@ -1,0 +1,9 @@
+<div class="menu-section">
+  <h1>Kanto Gym Leaders</h1>
+
+  <div class="card-grid">
+    @for (leader of gymLeaderK(); track leader.name) {
+      <app-leader-info [leader]="leader"></app-leader-info>
+    }
+  </div>
+</div>
