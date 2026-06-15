@@ -14,5 +14,9 @@
     padding: 6px 10px;
     cursor: pointer;
   }
-
-  p {}
+  
+  .motto {
+    margin-top: 1000px;
+    color: #444;
+    font-style: italic;
+  }
